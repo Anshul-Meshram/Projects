@@ -49,8 +49,8 @@ ansible --version
 ### 2. Clone this Repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-main-repo>.git
-cd <your-main-repo>/DevOps/Ansible-WSL-LAMP
+git clone https://github.com/Anshul-Meshram/Projects.git
+cd Projects/DevOps/Ansible-WSL-LAMP
 ```
 
 ### 3. Run the Playbooks
