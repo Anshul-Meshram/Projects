@@ -1,0 +1,27 @@
+---
+- name: Install Apache, PHP & MySQL
+  hosts: test-servers
+  become: true
+  become_user: root
+  gather_facts: true
+  tasks:
+    - name: Install Apache2
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Install PHP modules
+      apt:
+        name:
+          - libapache2-mod-php
+          - php-cli
+          - php-mcrypt
+          - php-gd
+          - php-mysql
+        state: present
+
+    - name: Install MySQL server
+      apt:
+        name: mysql-server
+        state: present

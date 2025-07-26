@@ -1,0 +1,31 @@
+---
+- hosts: all
+  remote_user: root
+  become: true
+  tasks:
+    - name: Install pip and MySQL dependencies
+      apt:
+        name:
+          - python3-pip
+          - default-libmysqlclient-dev
+        state: present
+        update_cache: yes
+
+    - name: Install MySQL Python package
+      pip:
+        name: mysqlclient
+
+    - name: Create MySQL user
+      community.mysql.mysql_user:
+        name: edureka
+        password: edureka
+        priv: '*.*:ALL'
+        state: present
+
+    - name: Create database 'edu'
+      community.mysql.mysql_db:
+        name: edu
+        state: present
+
+    - name: Create table 'reg'
+      command: mysql -uedureka -pedureka -e "CREATE TABLE IF NOT EXISTS edu.reg (name VARCHAR(30), email VARCHAR(30));"
