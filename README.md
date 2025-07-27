@@ -11,7 +11,7 @@ This project automates the setup of a **LAMP Stack (Linux, Apache, MySQL, PHP)**
 ## What This Project Does
 - Installs **Apache2**, **PHP**, and **MySQL** on your local Ubuntu (WSL).
 - Configures a **MySQL database and user**.
-- Deploys a **sample PHP website** with `index.html`, `process.php`, and `result.php`.
+- Deploys a **sample PHP website**.
 - Uses **Ansible playbooks** for full automation:
   - `lampstack.yml` – installs LAMP components.
   - `mysqlmodule.yml` – sets up MySQL database and user.
