@@ -2,7 +2,6 @@
 
 ---
 
-``markdown
 # Ansible LAMP Stack Automation (WSL Ubuntu)
 
 This project automates the setup of a **LAMP Stack (Linux, Apache, MySQL, PHP)** and deploys a simple PHP website using **Ansible**, all running on **WSL Ubuntu** (no VirtualBox or Docker needed).
