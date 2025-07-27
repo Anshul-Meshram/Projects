@@ -1,7 +1,4 @@
 # Projects
-Here’s the **final README.md** for your **Ansible LAMP project** (`DevOps/Ansible-WSL-LAMP` folder).
-
-You can copy-paste this into a `README.md` file inside that folder:
 
 ---
 
